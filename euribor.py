@@ -2,10 +2,8 @@ import requests
 from bs4 import BeautifulSoup
 from datetime import date
 
-
 URL_EURIBOR_12m = 'https://www.euribor-rates.eu/es/tipos-euribor-actualmente/4/euribor-valor-12-meses/'
 URL_EURIBOR_6m 	= 'https://www.euribor-rates.eu/es/tipos-euribor-actualmente/3/euribor-valor-6-meses/'
-
 
 def _scrapEuribor(html):
 	page = BeautifulSoup(html, 'html.parser')
